@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: black;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+ /* header */
+#barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    width: 100%;
+    background-color: black;
+}
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 150px;
+    padding: 0px 5px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    padding: 0px 20px;
+
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav>a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    margin:5px;
+    gap:10px;
+
+    color: whitesmoke;
+    background-color: blueviolet;
+    text-decoration: none;
+
+    border-bottom: 1px solid;
+    border-color: transparent;
+    border-radius: 2px;
+}
+a:hover{
+    background-color: fuchsia;
+}
+
+#carrusel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: flex-start;
+    align-content: flex-start;
+    margin: auto;
+    width: 100%;
+    z-index: default;
+    background-color: black;
+}
+#banner{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+
+    background-color: black;
+}
+.previo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: absolute;
+    top: 15rem;
+}
+.previo>img{
+    width: 100%;
+}
+.siguiente{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: absolute;
+    top:15rem;
+    right:0rem;
+}
+.siguiente>img{
+    width: 100%;
+}
+
+ /* checkbox y barra de búsqueda */
+#category_form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    justify-content: space-evenly;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: transparent;
+}
+.category>span{
+    background-color: transparent;
+}
+#category_form>form {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    padding: 5px 10px;
+}
+.buscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:2px;
+    background-color: transparent;
+}
+#buscador{
+    border-radius: 6px;
+    background-color: whitesmoke;
+    color:black;
+}
+#iconbuscador{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    background-color: transparent;
+}
+#iconobuscador>img{
+    width: 100%;
+}
+
+ /* Tarjetas home - upcoming y past */
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 100%;
+    background-color:black;
+    gap: 20px;
+    padding: 80px 20px;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(58, 5, 108);
+    border: 1px solid;
+    border-radius: 10px;
+    width: 260px;
+    height: 350px;
+    padding: 10px 20px;
+    gap: 10px;
+    box-shadow: 5px 3px 9px -1px #d1cece;
+}
+.tarjeta:hover{
+    transition-duration: .3s, .8s; 
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.imagen{
+    width: 100%;
+    height: 50%;
+}
+.texto{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.texto>h2{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.texto>p{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.boton{
+    display: flex;
+    align-items: flex-end;
+
+    background-color: black;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-top:0rem;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.boton:hover{
+    background-color: fuchsia;
+}
+.boton>a{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+ /* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin:0px,0px;
+    padding: 5px;
+    
+    width: 100%;
+    height: 60px;
+    background-color: blueviolet;
+}
+.redes{
+   display: flex;
+   align-items: center; 
+
+   background-color: transparent;
+}
+#instagram{
+    width: 45px;
+    padding: 5px;
+    background-color: transparent;
+}
+#face{
+    width: 45px;
+    padding: 5px;
+    background-color: transparent;
+}
+#wssp{
+    width: 45px;
+    padding: 5px;
+    background-color: transparent;
+}
+#cohort{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+ /* contacto */
+#formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 200px;
+
+    color: fuchsia;
+    font-size: 18px;
+    width: 900px;
+    height: 450px;
+}
+#formulario>input{
+    align-self: flex-start;
+}
+#formulario>label{
+    align-self: flex-start;
+    padding: 10px;  
+}
+#mensagge{
+    width: 900px;
+    height: 200px;
+}
+#submit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 10px 10px;
+    margin-top: 10px;
+
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    font-size: 18px;
+    font-style: bold;
+}
+
+.details{
+    background-color: black;
+}
+
+ /* tabla */
+.listaevents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+
+    font-size: 16px;
+    text-align: center;
+    background-color: black;
+}
+.class{
+    margin-top: 1rem;
+}
+th{
+    background-color: fuchsia;
+    color: black;
+}
+td{
+    background-color: whitesmoke;
+    color: black;
+}
+td:hover{
+    background-color: blueviolet;
+}
+
+#contenido{
+    background-color: black;
+}
+#contenido>h2{
+    background-color: black;
+    color:whitesmoke;
+    font-size: 20px;
+    margin: 4rem, 4rem;
+    padding: 2rem;
+}
+#contenido>table{
+    padding: 2rem;
+    margin: 2rem;
+    width: 800px;
+}
+#contenido>table>th,td{
+    padding: 10px;
+}
+
+ /* details*/
+#divdetails{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 900px;
+    height: 500px;
+    background-color: grey;
+    margin-left: 80px;
+}
+#imgdetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 400px;
+    background-color:transparent;
+}
+#divtextodetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+#titulodetails{
+    display: inline;
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    background-color: transparent;
+}
+.textodetails{
+    display: inline;
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.footerdetails{
+    margin-top: 60px;
+}
+
+ /* diseño resposive para tablet */
+
+@media only screen and (min-width: 845px) and (max-width: 1024px){
+.previo{
+    position: absolute;
+    top: 15rem;
+}
+.siguiente{
+    position: absolute;
+    top:15rem;
+    right:0rem;
+}
+.form{
+    font-size: 12px;
+}
+#formulario{
+    padding: 30px 80px;
+    width: 600px;
+}
+#mensagge{
+    width: 600px;
+}
+footer{
+    margin-top: 50px;
+}
+}
+   
+  /* diseño resposive para celular */
+@media only screen and (min-width: 390px) and (max-width: 844px){
+.logo{
+    padding-left: 15px;
+}
+nav{
+    padding-left: 0px;
+}
+.previo{
+    position: absolute;
+    top: 10rem;
+}
+.siguiente{
+    position: absolute;
+    top:10rem;
+    right:0rem;
+}
+.contenedor{
+    padding-left: 0px;
+}
+.form{
+    font-size: 12px;
+}
+#formulario{
+    margin-top: 10px;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-left: 30px;
+}
+#mensagge{
+    width: 300px;
+}
+footer{
+    margin-top: 50px;
+}
+
+}
